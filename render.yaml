@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: opencomm
+    env: docker
+    repo: https://github.com/BigAlRender/reaction.git
+    region: oregon
+    plan: standard
+    numInstances: 1
+  - type: web
+    name: opencommadmin
+    env: docker
+    repo: https://github.com/BigAlRender/reaction-admin.git
+    region: oregon
+    plan: standard
+    numInstances: 1
